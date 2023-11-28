@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconic.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>About | My Personal Portfolio</title>
+
+    <style>
+        body {
+            
+            margin: 20px;
+            min-height: 100vh;
+            background-image: url(2ndpg.png);
+            background-size: 100% 100%;
+            background-position: 0px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            
+            font-size: 50px;
+            max-width:1200px; 
+            margin:0 auto;
+            position: relative;
+            color: rgb(255, 237, 237);
+            margin-bottom: 20px;
+            font-family: 'Copperplate Gothic', sans-serif;
+
+        }
+
+        p {
+            color: #ebeaea;
+        }
+        
+
+        footer {
+        text-align: center; /* Center the text */
+        position: absolute;
+        bottom: 0px;
+        left: 40%;
+        transform: translateX(-50%); /* Adjust the bottom position */
+        width: 100%; /* Make it full width */
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h2>Hellooo, Welcome my <span id="displayUsername"></span>!</h2>
+
+    <p>
+        
+        Art and personality are intertwined in a dance of self-expression and individuality.
+        <br>
+        Just like a piece of art, each personality, including mine, is a unique masterpiece. 
+        It is a powerful tool for expressing one's personality.
+        <br>
+        It's like a language that speaks without words, conveying emotions, thoughts, and experiences that might be hard to put into words. 
+        <br>
+        For someone who is introverted and shy, like me, art can be a safe space to express myself.
+        <br>
+        I can use colors, shapes, and textures to represent different aspects of my personality.
+        <br>
+        A darker color might represent my introspective side, while a sudden splash of bright color 
+        <br>
+        could symbolize those moments when I feel more outgoing.
+        <br>
+        <br>
+        Art also allows me to control how much of myself I reveal to the world.
+        <br>
+        I can choose to create abstract pieces that require interpretation, 
+        or more literal representations of my thoughts and feelings.
+        <br>
+        It's all up to me.
+        Plus, the act of creating art can be therapeutic, helping me to understand myself better. 
+        <br>
+        <br>
+
+        Art, is much like my personality, a beautiful tapestry of unique expressions and experiences.
+        I, a bit shy and introverted to the people that I'm new, <br> mirrors the quiet allure of a delicate watercolor painting, 
+        where each stroke is thoughtfully placed, and the overall image is one of depth and introspection. <br>
+        Just as art is a medium for artists to express their individuality, my personality is my canvas, 
+        where my introversion is not a limitation, but a unique color in my own palette. <br>
+        My personality, like art, is a testament to the fact that beauty often lies in the subtleties, 
+        the quiet moments, and the gentle whispers of self-expression. 🎨
+        
+
+    </p>    
+
+
+    <button onclick="goBack()"style="position: fixed; bottom: 20px; left: 20px;">Go Back</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var username = urlParams.get('username');
+            
+            if (username === null) {
+                // If username is null, replace it with a default greeting
+                document.getElementById('displayUsername').innerText = "Guest";
+            } else {
+                document.getElementById('displayUsername').innerText = username;
+            }
+    
+            alert("Welcome to Author's Introduction, " + (username || "Guest") + "!");
+        });
+    
+    </script>
+
+    <script>
+    function goBack() {
+    window.location.href = "index.html";
+    }
+    </script>
+
+<footer>
+    <p> &copy; 2023 HMB Web Page</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

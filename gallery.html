@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconic.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Gallery | My Personal Portfolio</title>
+
+    <style>
+        body {
+            margin: 20px;
+            min-height: 100vh;
+            background-image: url(gallery_background.jpg); /* Add your gallery background image */
+            background-size: cover;
+            background-position: 0px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            color: rgb(255, 237, 237);
+            margin-bottom: 20px;
+            font-family: 'Copperplate Gothic', sans-serif;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            margin: 10px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 300px; /* Adjust the maximum width of each image */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        button {
+            padding: 10px;
+            background-color: #50db34;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        footer {
+            text-align: center;
+            position:relative;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Explore My Gallery</h2>
+
+    <button onclick="goBack()" style="position: fixed; bottom: 20px; left: 20px;">Go Back</button>
+
+   
+        <div class="gallery-container">
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <img src="Untitled82.png" alt="Artwork 1">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled22.png" alt="Artwork 2">
+                   
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled23.png" alt="Artwork 3">
+                   
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled25.png" alt="Artwork 4">
+                </div>
+            </div>
+    
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <img src="Untitled37.png" alt="Artwork 5">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled69.png" alt="Artwork 6">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled42.png" alt="Artwork 7">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled48.png" alt="Artwork 8">
+                    
+                </div>
+            </div>
+          
+            <div class="gallery-row">
+                <div class="gallery-item">
+                    <img src="Untitled61.png" alt="Artwork 9">
+                   
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled64.png" alt="Artwork 10">
+                  
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled2.png" alt="Artwork 11">
+                    
+                </div>
+                <div class="gallery-item">
+                    <img src="Untitled88.png" alt="Artwork 12">
+                   
+                </div>
+            </div>   
+        </div>
+
+    <footer>
+        <p> &copy; 2023 HMB Web Page</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

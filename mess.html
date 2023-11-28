@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconic.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        body {
+            
+            margin: 20px;
+            min-height: 100vh;
+            background-image: url(2ndpg.png);
+            background-size: 100% 100%;
+            background-position: 0px;
+            background-repeat: no-repeat;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            
+            font-size: 50px;
+            max-width:1200px; 
+            margin:0 auto;
+            position: relative;
+            color: rgb(255, 237, 237);
+            margin-bottom: 20px;
+            font-family: 'Copperplate Gothic', sans-serif;
+
+        }
+
+        p {
+            color: #ebeaea;
+        }
+
+        footer {
+        text-align: center; /* Center the text */
+        position:relative;
+        bottom: 0px;
+        left: 40%;
+        transform: translateX(-50%); /* Adjust the bottom position */
+        width: 100%; /* Make it full width */
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .gallery-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .gallery-item {
+            width: 23%; /* Adjust the width of each item as needed */
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .gallery-row:last-child .gallery-item {
+        width: 48%; /* Adjust the width of each item for the last row */
+        margin-bottom: 20px; /* Add margin-bottom for spacing between items */
+        margin-right: 2%; /* Add margin-right for spacing between items */
+        }
+
+
+        .gallery-row:last-child .gallery-item {
+         width: 48%; /* Adjust the width of each item for the last row */
+        }
+       
+    </style>
+</head>
+<body>
+
+    <h2>Hello! Welcome to my Gallery, <span id="displayUsername"></span>!</h2>
+
+    
+    <p>You can now explore this artistic page with me!</p>
+
+    <div class="gallery-container"> 
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="Untitled80.png" alt="Artwork 13">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_20231123_170444.png" alt="Artwork 14">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="Untitled1.png" alt="Artwork 15">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="Untitled14.png" alt="Artwork 16">
+                
+            </div>
+        </div>   
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="Untitled68.png" alt="Artwork 17">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="Untitled102.png" alt="Artwork 18">
+            </div>
+        </div>
+
+    </div>
+
+
+    <p>Here's some palette from bloomingdesign.co!</p>
+
+    <div class="gallery-container"> 
+
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="Neutral Feminine Color Palette.jfif" alt="Artwork 1">
+                
+            </div>
+            <div class="gallery-item">
+                <img src="Summer Bouquet Color Palette.jfif" alt="Artwork 2">
+               
+            </div>
+            <div class="gallery-item">
+                <img src="Feminine Earthtone Palette.jfif" alt="Artwork 3">
+               
+            </div>
+            <div class="gallery-item">
+                <img src="The Ultimate Color Palette Collection — Blooming Design Co_.jfif" alt="Artwork 4">
+            </div>
+        </div>
+    </div>
+
+<p> For more Ultimate Color Palette, visit https://www.bloomingdesign.co/blog/the-ultimate-color-palette-collection </p>
+
+    <button onclick="goBack()"style="position: fixed; bottom: 20px; left: 20px;">Go Back</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var username = urlParams.get('username');
+            document.getElementById('displayUsername').innerText = username;
+            alert("Welcome to Gallery, " + username + "!");
+        });
+    
+    </script>
+
+<script>
+    function goBack() {
+        window.location.href = "index.html";
+    }
+</script>
+
+<footer>
+    <p> &copy; 2023 HMB Web Page</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

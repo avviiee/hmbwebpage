@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconic.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>Others | My Personal Portfolio</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+
+        h1 {
+            color: #a39f9f;
+        }
+
+        footer {
+    text-align: center;
+    position: fixed; /* Change to fixed position */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Adjust background color if needed */
+    padding: 10px; /* Add padding for better visibility */
+}
+
+button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2; /* Higher z-index to ensure it's above the footer */
+}
+
+    </style>
+</head>
+<body>
+    <hr>
+    <h1>There's nothing to see here!</h1>
+    <hr>
+
+    <button onclick="goBack()"style="position: fixed; bottom: 20px; left: 20px;">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+    
+    <footer>
+        <p> &copy; 2023 HMB Web Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
